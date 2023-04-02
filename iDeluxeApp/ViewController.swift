@@ -6,12 +6,24 @@
 //
 
 import UIKit
+import SnapKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+    
+    private let button = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .gray
+        view.addSubview(button)
+        button.backgroundColor = .green
+        
+        button.snp.makeConstraints {
+            $0.center.equalToSuperview()
+            $0.size.equalTo(100)
+            
+        }
     }
 
 
