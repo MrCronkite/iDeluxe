@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AuthSDK
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,7 +20,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = AuthViewController()
         window?.makeKeyAndVisible()
     }
 }
