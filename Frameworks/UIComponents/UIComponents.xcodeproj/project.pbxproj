@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B22B59E929DA09E300A15DBC /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = B22B59E829DA09E300A15DBC /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		774CCC9A29CAD4760053A234 /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 774CCC9929CAD4760053A234 /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B22B59E529DA09E300A15DBC /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B22B59E829DA09E300A15DBC /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
+		774CCC9629CAD4760053A234 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		774CCC9929CAD4760053A234 /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B22B59E229DA09E300A15DBC /* Frameworks */ = {
+		774CCC9329CAD4760053A234 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -26,26 +26,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B22B59DB29DA09E300A15DBC = {
+		774CCC8C29CAD4760053A234 = {
 			isa = PBXGroup;
 			children = (
-				B22B59E729DA09E300A15DBC /* UIComponents */,
-				B22B59E629DA09E300A15DBC /* Products */,
+				774CCC9829CAD4760053A234 /* UIComponents */,
+				774CCC9729CAD4760053A234 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B22B59E629DA09E300A15DBC /* Products */ = {
+		774CCC9729CAD4760053A234 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B22B59E529DA09E300A15DBC /* UIComponents.framework */,
+				774CCC9629CAD4760053A234 /* UIComponents.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B22B59E729DA09E300A15DBC /* UIComponents */ = {
+		774CCC9829CAD4760053A234 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				B22B59E829DA09E300A15DBC /* UIComponents.h */,
+				774CCC9929CAD4760053A234 /* UIComponents.h */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -53,25 +53,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B22B59E029DA09E300A15DBC /* Headers */ = {
+		774CCC9129CAD4760053A234 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B22B59E929DA09E300A15DBC /* UIComponents.h in Headers */,
+				774CCC9A29CAD4760053A234 /* UIComponents.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B22B59E429DA09E300A15DBC /* UIComponents */ = {
+		774CCC9529CAD4760053A234 /* UIComponents */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B22B59EC29DA09E300A15DBC /* Build configuration list for PBXNativeTarget "UIComponents" */;
+			buildConfigurationList = 774CCC9D29CAD4760053A234 /* Build configuration list for PBXNativeTarget "UIComponents" */;
 			buildPhases = (
-				B22B59E029DA09E300A15DBC /* Headers */,
-				B22B59E129DA09E300A15DBC /* Sources */,
-				B22B59E229DA09E300A15DBC /* Frameworks */,
-				B22B59E329DA09E300A15DBC /* Resources */,
+				774CCC9129CAD4760053A234 /* Headers */,
+				774CCC9229CAD4760053A234 /* Sources */,
+				774CCC9329CAD4760053A234 /* Frameworks */,
+				774CCC9429CAD4760053A234 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -79,24 +79,24 @@
 			);
 			name = UIComponents;
 			productName = UIComponents;
-			productReference = B22B59E529DA09E300A15DBC /* UIComponents.framework */;
+			productReference = 774CCC9629CAD4760053A234 /* UIComponents.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B22B59DC29DA09E300A15DBC /* Project object */ = {
+		774CCC8D29CAD4760053A234 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					B22B59E429DA09E300A15DBC = {
-						CreatedOnToolsVersion = 14.1;
+					774CCC9529CAD4760053A234 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = B22B59DF29DA09E300A15DBC /* Build configuration list for PBXProject "UIComponents" */;
+			buildConfigurationList = 774CCC9029CAD4760053A234 /* Build configuration list for PBXProject "UIComponents" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,18 +104,18 @@
 				en,
 				Base,
 			);
-			mainGroup = B22B59DB29DA09E300A15DBC;
-			productRefGroup = B22B59E629DA09E300A15DBC /* Products */;
+			mainGroup = 774CCC8C29CAD4760053A234;
+			productRefGroup = 774CCC9729CAD4760053A234 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B22B59E429DA09E300A15DBC /* UIComponents */,
+				774CCC9529CAD4760053A234 /* UIComponents */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B22B59E329DA09E300A15DBC /* Resources */ = {
+		774CCC9429CAD4760053A234 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B22B59E129DA09E300A15DBC /* Sources */ = {
+		774CCC9229CAD4760053A234 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +135,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B22B59EA29DA09E300A15DBC /* Debug */ = {
+		774CCC9B29CAD4760053A234 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -186,7 +186,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -198,7 +198,7 @@
 			};
 			name = Debug;
 		};
-		B22B59EB29DA09E300A15DBC /* Release */ = {
+		774CCC9C29CAD4760053A234 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -255,13 +255,12 @@
 			};
 			name = Release;
 		};
-		B22B59ED29DA09E300A15DBC /* Debug */ = {
+		774CCC9E29CAD4760053A234 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LUQ926BAHR;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -274,7 +273,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vladShima.UIComponents;
+				PRODUCT_BUNDLE_IDENTIFIER = "VP-P.UIComponents";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -283,13 +282,12 @@
 			};
 			name = Debug;
 		};
-		B22B59EE29DA09E300A15DBC /* Release */ = {
+		774CCC9F29CAD4760053A234 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LUQ926BAHR;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -302,7 +300,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vladShima.UIComponents;
+				PRODUCT_BUNDLE_IDENTIFIER = "VP-P.UIComponents";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -314,25 +312,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B22B59DF29DA09E300A15DBC /* Build configuration list for PBXProject "UIComponents" */ = {
+		774CCC9029CAD4760053A234 /* Build configuration list for PBXProject "UIComponents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B22B59EA29DA09E300A15DBC /* Debug */,
-				B22B59EB29DA09E300A15DBC /* Release */,
+				774CCC9B29CAD4760053A234 /* Debug */,
+				774CCC9C29CAD4760053A234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B22B59EC29DA09E300A15DBC /* Build configuration list for PBXNativeTarget "UIComponents" */ = {
+		774CCC9D29CAD4760053A234 /* Build configuration list for PBXNativeTarget "UIComponents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B22B59ED29DA09E300A15DBC /* Debug */,
-				B22B59EE29DA09E300A15DBC /* Release */,
+				774CCC9E29CAD4760053A234 /* Debug */,
+				774CCC9F29CAD4760053A234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B22B59DC29DA09E300A15DBC /* Project object */;
+	rootObject = 774CCC8D29CAD4760053A234 /* Project object */;
 }

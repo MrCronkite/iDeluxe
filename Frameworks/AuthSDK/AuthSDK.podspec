@@ -1,24 +1,23 @@
-Pod::Spec.new do |spec|
-  spec.name          = 'AuthSDK'
-  spec.version       = '3.1.0'
-  spec.license       = { :type => 'BSD' }
-  spec.homepage      = 'https://github.com/tonymillion/AuthSDK'
-  spec.authors       = { 'Tony Million' => 'tonymillion@gmail.com' }
-  spec.summary       = 'ARC and GCD Compatible Reachability Class for iOS and OS X.'
-  spec.source        = { :git => 'https://github.com/tonymillion/AuthSDK.git', :tag => 'v3.1.0' }
-  spec.module_name   = 'Rich'
-  spec.swift_version = '4.0'
+Pod::Spec.new do |s|
+  s.name             = 'AuthSDK'
+  s.module_name      = 'AuthSDK'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of AuthSDK.'
+  s.swift_version    = '5.0'
+  s.homepage         = 'https://github.com/VAmpersand/AuthSDK'
+  s.license          = 'MCI'
+  s.author           = { 'VP' => 'https://github.com/VAmpersand' }
+  s.source           = { :git => 'https://github.com/VAmpersand/AuthSDK.git', :tag => s.version.to_s }
+  s.platform         = :ios, '14.0'
+  s.ios.deployment_target = '14.0'
 
-  spec.ios.deployment_target  = '14.0'
-  spec.osx.deployment_target  = '14.10'
+  s.source_files = '**/*.{swift,h,m,xib,storyboard}'
+  s.resources = [
+    "Resources/*.{strings,xcassets,stringsdict}",
+    "Resources/**/*.{strings,stringsdict}"
+  ]
 
-  spec.source_files       = 'Reachability/common/*.swift'
-  spec.ios.source_files   = 'Reachability/ios/*.swift', 'Reachability/extensions/*.swift'
-  spec.osx.source_files   = 'Reachability/osx/*.swift'
+  s.dependency 'R.swift'
+  s.dependency 'UIComponents'
 
-  spec.framework      = 'SystemConfiguration'
-  spec.ios.framework  = 'UIKit'
-  spec.osx.framework  = 'AppKit'
-
-  spec.dependency 'R.swift'
 end

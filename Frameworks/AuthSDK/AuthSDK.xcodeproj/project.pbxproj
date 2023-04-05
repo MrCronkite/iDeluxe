@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B22B59FD29DA0A1200A15DBC /* AuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B22B59FC29DA0A1200A15DBC /* AuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		774CCCC229CAD5360053A234 /* AuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 774CCCC129CAD5360053A234 /* AuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B22B59F929DA0A1200A15DBC /* AuthSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B22B59FC29DA0A1200A15DBC /* AuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthSDK.h; sourceTree = "<group>"; };
+		774CCCBE29CAD5360053A234 /* AuthSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		774CCCC129CAD5360053A234 /* AuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B22B59F629DA0A1200A15DBC /* Frameworks */ = {
+		774CCCBB29CAD5360053A234 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -26,26 +26,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B22B59EF29DA0A1200A15DBC = {
+		774CCCB429CAD5360053A234 = {
 			isa = PBXGroup;
 			children = (
-				B22B59FB29DA0A1200A15DBC /* AuthSDK */,
-				B22B59FA29DA0A1200A15DBC /* Products */,
+				774CCCC029CAD5360053A234 /* AuthSDK */,
+				774CCCBF29CAD5360053A234 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B22B59FA29DA0A1200A15DBC /* Products */ = {
+		774CCCBF29CAD5360053A234 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B22B59F929DA0A1200A15DBC /* AuthSDK.framework */,
+				774CCCBE29CAD5360053A234 /* AuthSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B22B59FB29DA0A1200A15DBC /* AuthSDK */ = {
+		774CCCC029CAD5360053A234 /* AuthSDK */ = {
 			isa = PBXGroup;
 			children = (
-				B22B59FC29DA0A1200A15DBC /* AuthSDK.h */,
+				774CCCC129CAD5360053A234 /* AuthSDK.h */,
 			);
 			path = AuthSDK;
 			sourceTree = "<group>";
@@ -53,25 +53,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B22B59F429DA0A1200A15DBC /* Headers */ = {
+		774CCCB929CAD5360053A234 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B22B59FD29DA0A1200A15DBC /* AuthSDK.h in Headers */,
+				774CCCC229CAD5360053A234 /* AuthSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B22B59F829DA0A1200A15DBC /* AuthSDK */ = {
+		774CCCBD29CAD5360053A234 /* AuthSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B22B5A0029DA0A1200A15DBC /* Build configuration list for PBXNativeTarget "AuthSDK" */;
+			buildConfigurationList = 774CCCC529CAD5360053A234 /* Build configuration list for PBXNativeTarget "AuthSDK" */;
 			buildPhases = (
-				B22B59F429DA0A1200A15DBC /* Headers */,
-				B22B59F529DA0A1200A15DBC /* Sources */,
-				B22B59F629DA0A1200A15DBC /* Frameworks */,
-				B22B59F729DA0A1200A15DBC /* Resources */,
+				774CCCB929CAD5360053A234 /* Headers */,
+				774CCCBA29CAD5360053A234 /* Sources */,
+				774CCCBB29CAD5360053A234 /* Frameworks */,
+				774CCCBC29CAD5360053A234 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -79,24 +79,24 @@
 			);
 			name = AuthSDK;
 			productName = AuthSDK;
-			productReference = B22B59F929DA0A1200A15DBC /* AuthSDK.framework */;
+			productReference = 774CCCBE29CAD5360053A234 /* AuthSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B22B59F029DA0A1200A15DBC /* Project object */ = {
+		774CCCB529CAD5360053A234 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					B22B59F829DA0A1200A15DBC = {
-						CreatedOnToolsVersion = 14.1;
+					774CCCBD29CAD5360053A234 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = B22B59F329DA0A1200A15DBC /* Build configuration list for PBXProject "AuthSDK" */;
+			buildConfigurationList = 774CCCB829CAD5360053A234 /* Build configuration list for PBXProject "AuthSDK" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,18 +104,18 @@
 				en,
 				Base,
 			);
-			mainGroup = B22B59EF29DA0A1200A15DBC;
-			productRefGroup = B22B59FA29DA0A1200A15DBC /* Products */;
+			mainGroup = 774CCCB429CAD5360053A234;
+			productRefGroup = 774CCCBF29CAD5360053A234 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B22B59F829DA0A1200A15DBC /* AuthSDK */,
+				774CCCBD29CAD5360053A234 /* AuthSDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B22B59F729DA0A1200A15DBC /* Resources */ = {
+		774CCCBC29CAD5360053A234 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B22B59F529DA0A1200A15DBC /* Sources */ = {
+		774CCCBA29CAD5360053A234 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +135,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B22B59FE29DA0A1200A15DBC /* Debug */ = {
+		774CCCC329CAD5360053A234 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -186,7 +186,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -198,7 +198,7 @@
 			};
 			name = Debug;
 		};
-		B22B59FF29DA0A1200A15DBC /* Release */ = {
+		774CCCC429CAD5360053A234 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -255,13 +255,12 @@
 			};
 			name = Release;
 		};
-		B22B5A0129DA0A1200A15DBC /* Debug */ = {
+		774CCCC629CAD5360053A234 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LUQ926BAHR;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -274,7 +273,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vladShima.AuthSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = "VP-P.AuthSDK";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -283,13 +282,12 @@
 			};
 			name = Debug;
 		};
-		B22B5A0229DA0A1200A15DBC /* Release */ = {
+		774CCCC729CAD5360053A234 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LUQ926BAHR;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -302,7 +300,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vladShima.AuthSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = "VP-P.AuthSDK";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -314,25 +312,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B22B59F329DA0A1200A15DBC /* Build configuration list for PBXProject "AuthSDK" */ = {
+		774CCCB829CAD5360053A234 /* Build configuration list for PBXProject "AuthSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B22B59FE29DA0A1200A15DBC /* Debug */,
-				B22B59FF29DA0A1200A15DBC /* Release */,
+				774CCCC329CAD5360053A234 /* Debug */,
+				774CCCC429CAD5360053A234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B22B5A0029DA0A1200A15DBC /* Build configuration list for PBXNativeTarget "AuthSDK" */ = {
+		774CCCC529CAD5360053A234 /* Build configuration list for PBXNativeTarget "AuthSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B22B5A0129DA0A1200A15DBC /* Debug */,
-				B22B5A0229DA0A1200A15DBC /* Release */,
+				774CCCC629CAD5360053A234 /* Debug */,
+				774CCCC729CAD5360053A234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B22B59F029DA0A1200A15DBC /* Project object */;
+	rootObject = 774CCCB529CAD5360053A234 /* Project object */;
 }
