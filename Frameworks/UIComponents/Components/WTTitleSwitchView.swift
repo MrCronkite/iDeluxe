@@ -2,7 +2,7 @@
 //  WTTitleSwitchView.swift
 //  UIComponents
 //
-//  Created by Viktor Prikolota on 02.04.2023.
+//  Created by admin1 on 2.04.23.
 //
 
 import UIKit

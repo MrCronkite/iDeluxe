@@ -2,7 +2,7 @@
 //  Constants.swift
 //  UIComponents
 //
-//  Created by Viktor Prikolota on 27.03.2023.
+//  Created by admin1 on 2.04.23.
 //
 
 import Foundation
