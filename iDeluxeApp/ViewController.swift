@@ -21,11 +21,8 @@ final class ViewController: UIViewController {
         
         button.snp.makeConstraints {
             $0.center.equalToSuperview()
-            $0.size.equalTo(100)
-            
+            $0.size.equalTo(100)            
         }
     }
-
-
 }
 
