@@ -102,8 +102,8 @@ public extension WTTitleSwitchView {
 
 private extension WTTitleSwitchView {
     func animateStateSetting() {
-        let activeButton = state == .left ? secondLable : firstLable
-        let inactiveButton = state == .left ? firstLable : secondLable
+        let activeLable = state == .left ? secondLable : firstLable
+        let inactiveLable = state == .left ? firstLable : secondLable
         
         UIView.animate(withDuration: animatiomTimeInterval / 4) {
             self.separatorView.alpha = 0.1
@@ -114,27 +114,21 @@ private extension WTTitleSwitchView {
             }
         }
         
-        UIView.animate(withDuration: animatiomTimeInterval / 2) { // Reset alpha
-            activeButton.alpha = 0.3
-                    
-        } completion: { _ in
-            UIView.animate(withDuration: self.animatiomTimeInterval) { // Set position
-                inactiveButton.snp.remakeConstraints {
-                    $0.leading.bottom.equalToSuperview()
-                    $0.trailing.equalTo(self.separatorView.snp.leading).offset(-10)
-                }
-                
-                activeButton.snp.remakeConstraints {
-                    $0.leading.equalTo(self.separatorView.snp.trailing).offset(10)
-                    $0.trailing.bottom.equalToSuperview()
-                }
-                self.layoutIfNeeded()
-                
-            } completion: { _ in
-                UIView.animate(withDuration: self.animatiomTimeInterval / 2) { // Set alpha
-                    inactiveButton.alpha = 1
-                }
+        UIView.animate(withDuration: animatiomTimeInterval / 2) {
+            activeLable.alpha = 0.3
+            inactiveLable.alpha = 1
+            
+            inactiveLable.snp.remakeConstraints {
+                $0.leading.bottom.equalToSuperview()
+                $0.trailing.equalTo(self.separatorView.snp.leading).offset(-10)
             }
+            
+            activeLable.snp.remakeConstraints {
+                $0.leading.equalTo(self.separatorView.snp.trailing).offset(10)
+                $0.trailing.bottom.equalToSuperview()
+            }
+            self.layoutIfNeeded()
         }
+        
     }
 }
