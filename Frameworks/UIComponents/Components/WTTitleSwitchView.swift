@@ -97,7 +97,6 @@ private extension WTTitleSwitchView {
 public extension WTTitleSwitchView {
     @IBAction func buttonHandler() {
         state.toggle()
-        print("leftButtonHandler")
     }
 }
 
@@ -106,10 +105,18 @@ private extension WTTitleSwitchView {
         let activeButton = state == .left ? secondLable : firstLable
         let inactiveButton = state == .left ? firstLable : secondLable
         
+        UIView.animate(withDuration: animatiomTimeInterval / 4) {
+            self.separatorView.alpha = 0.1
+        } completion: { _ in
+            UIView.animate(withDuration: self.animatiomTimeInterval / 4,
+                           delay: self.animatiomTimeInterval / 2) {
+                self.separatorView.alpha = 1
+            }
+        }
+        
         UIView.animate(withDuration: animatiomTimeInterval / 2) { // Reset alpha
             activeButton.alpha = 0.3
-            self.separatorView.alpha = 0.3
-            
+                    
         } completion: { _ in
             UIView.animate(withDuration: self.animatiomTimeInterval) { // Set position
                 inactiveButton.snp.remakeConstraints {
@@ -125,7 +132,6 @@ private extension WTTitleSwitchView {
                 
             } completion: { _ in
                 UIView.animate(withDuration: self.animatiomTimeInterval / 2) { // Set alpha
-                    self.separatorView.alpha = 1
                     inactiveButton.alpha = 1
                 }
             }
