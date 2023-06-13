@@ -22,12 +22,12 @@ extension WTTitleSwitchView {
 open class WTTitleSwitchView: BaseView {
     private let firstLable = UILabel()
     private let secondLable = UILabel()
-    
     private let separatorView = UILabel()
-    
     private let button = UIButton()
     
-    private let animatiomTimeInterval: TimeInterval = 0.3
+    private let animationTimeInterval: TimeInterval = 0.4
+    private var animationPoint: CGFloat = 0
+    private var animationTimer = Timer()
     
     public var state = ActivityState.left {
         didSet {
@@ -59,7 +59,8 @@ private extension WTTitleSwitchView {
         addSubview(separatorView)
         
         separatorView.text = "/"
-        
+        separatorView.font = .systemFont(ofSize: 30, weight: .medium)
+      
         separatorView.snp.makeConstraints {
             $0.bottom.equalToSuperview()
         }
@@ -67,6 +68,9 @@ private extension WTTitleSwitchView {
     
     func setupFirstLable() {
         addSubview(firstLable)
+        
+        firstLable.font = .systemFont(ofSize: 30, weight: .medium)
+        firstLable.layoutMargins.bottom = 0
         
         firstLable.snp.makeConstraints {
             $0.bottom.leading.equalToSuperview()
@@ -77,9 +81,14 @@ private extension WTTitleSwitchView {
     func setupSecondLable() {
         addSubview(secondLable)
         
+        secondLable.font = .systemFont(ofSize: 20, weight: .regular)
+        secondLable.layoutMargins.bottom = 0
+        secondLable.alpha = 0.3
+        
         secondLable.snp.makeConstraints {
-            $0.bottom.trailing.equalToSuperview()
-            $0.leading.equalTo(separatorView.snp.leading).offset(10)
+            $0.leading.equalTo(separatorView.snp.trailing).offset(10)
+            $0.trailing.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(2.5)
         }
     }
     
@@ -105,30 +114,55 @@ private extension WTTitleSwitchView {
         let activeLable = state == .left ? secondLable : firstLable
         let inactiveLable = state == .left ? firstLable : secondLable
         
-        UIView.animate(withDuration: animatiomTimeInterval / 4) {
+        UIView.animate(withDuration: animationTimeInterval / 4) {
             self.separatorView.alpha = 0.1
         } completion: { _ in
-            UIView.animate(withDuration: self.animatiomTimeInterval / 4,
-                           delay: self.animatiomTimeInterval / 2) {
+            UIView.animate(withDuration: self.animationTimeInterval / 4,
+                           delay: self.animationTimeInterval / 2) {
                 self.separatorView.alpha = 1
             }
         }
         
-        UIView.animate(withDuration: animatiomTimeInterval / 2) {
+        UIView.animate(withDuration: animationTimeInterval) {
             activeLable.alpha = 0.3
             inactiveLable.alpha = 1
-            
+              
             inactiveLable.snp.remakeConstraints {
                 $0.leading.bottom.equalToSuperview()
                 $0.trailing.equalTo(self.separatorView.snp.leading).offset(-10)
             }
             
             activeLable.snp.remakeConstraints {
+                $0.trailing.equalToSuperview()
                 $0.leading.equalTo(self.separatorView.snp.trailing).offset(10)
-                $0.trailing.bottom.equalToSuperview()
+                $0.bottom.equalToSuperview().inset(2.5)
             }
+            
             self.layoutIfNeeded()
         }
         
+        animationTimer.invalidate()
+        
+        animationTimer = Timer.scheduledTimer(withTimeInterval: animationTimeInterval / 25,
+                                              repeats: true,
+                                              block: { timer in
+            if self.animationPoint < 10 {
+                self.animationPoint += 0.4
+                
+                let inactiveSize = 20 + self.animationPoint
+                inactiveLable.font = inactiveSize > 25
+                ? .systemFont(ofSize: inactiveSize, weight: .medium)
+                : .systemFont(ofSize: inactiveSize, weight: .regular)
+                
+                let activeSize = 30 - self.animationPoint
+                activeLable.font = activeSize < 25
+                ? .systemFont(ofSize: activeSize, weight: .regular)
+                : .systemFont(ofSize: activeSize, weight: .medium)
+                
+            } else {
+                timer.invalidate()
+                self.animationPoint = 0
+            }
+        })
     }
 }
