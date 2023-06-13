@@ -59,7 +59,7 @@ private extension WTTitleSwitchView {
         addSubview(separatorView)
         
         separatorView.text = "/"
-        separatorView.font = .systemFont(ofSize: 30, weight: .medium)
+        separatorView.font = R.font.robotoMedium(size: 30)
       
         separatorView.snp.makeConstraints {
             $0.bottom.equalToSuperview()
@@ -69,7 +69,7 @@ private extension WTTitleSwitchView {
     func setupFirstLable() {
         addSubview(firstLable)
         
-        firstLable.font = .systemFont(ofSize: 30, weight: .medium)
+        firstLable.font = R.font.robotoMedium(size: 20)
         firstLable.layoutMargins.bottom = 0
         
         firstLable.snp.makeConstraints {
@@ -81,7 +81,7 @@ private extension WTTitleSwitchView {
     func setupSecondLable() {
         addSubview(secondLable)
         
-        secondLable.font = .systemFont(ofSize: 20, weight: .regular)
+        secondLable.font = R.font.robotoRegular(size: 20)
         secondLable.layoutMargins.bottom = 0
         secondLable.alpha = 0.3
         
@@ -151,14 +151,14 @@ private extension WTTitleSwitchView {
                 
                 let inactiveSize = 20 + self.animationPoint
                 inactiveLable.font = inactiveSize > 25
-                ? .systemFont(ofSize: inactiveSize, weight: .medium)
-                : .systemFont(ofSize: inactiveSize, weight: .regular)
+                ? R.font.robotoMedium(size: inactiveSize)
+                : R.font.robotoRegular(size: inactiveSize)
                 
                 let activeSize = 30 - self.animationPoint
                 activeLable.font = activeSize < 25
-                ? .systemFont(ofSize: activeSize, weight: .regular)
-                : .systemFont(ofSize: activeSize, weight: .medium)
-                
+                ? R.font.robotoRegular(size: activeSize)
+                : R.font.robotoMedium(size: activeSize)
+              
             } else {
                 timer.invalidate()
                 self.animationPoint = 0

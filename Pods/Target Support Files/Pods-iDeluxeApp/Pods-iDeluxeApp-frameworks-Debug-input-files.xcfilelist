@@ -1,5 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-iDeluxeApp/Pods-iDeluxeApp-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AuthSDK/AuthSDK.framework
-${BUILT_PRODUCTS_DIR}/R.swift/RswiftResources.framework
+${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/UIComponents/UIComponents.framework

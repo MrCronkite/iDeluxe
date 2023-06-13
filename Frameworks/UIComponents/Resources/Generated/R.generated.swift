@@ -8,7 +8,7 @@ import Rswift
 import UIKit
 
 /// This `R` struct is generated and contains references to static resources.
-struct R: Rswift.Validatable {
+public struct R: Rswift.Validatable {
   fileprivate static let applicationLocale = hostingBundle.preferredLocalizations.first.flatMap { Locale(identifier: $0) } ?? Locale.current
   fileprivate static let hostingBundle = Bundle(for: R.Class.self)
 
@@ -84,77 +84,53 @@ struct R: Rswift.Validatable {
     return dict?[key] as? String
   }
 
-  static func validate() throws {
+  public static func validate() throws {
+    try font.validate()
     try intern.validate()
   }
 
-  #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 1 storyboards.
-  struct storyboard {
-    /// Storyboard `LaunchScreen`.
-    static let launchScreen = _R.storyboard.launchScreen()
+  /// This `R.file` struct is generated, and contains static references to 2 files.
+  public struct file {
+    /// Resource file `Roboto-Medium.ttf`.
+    public static let robotoMediumTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Roboto-Medium", pathExtension: "ttf")
+    /// Resource file `Roboto-Regular.ttf`.
+    public static let robotoRegularTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Roboto-Regular", pathExtension: "ttf")
 
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
-    static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
+    /// `bundle.url(forResource: "Roboto-Medium", withExtension: "ttf")`
+    public static func robotoMediumTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.robotoMediumTtf
+      return fileResource.bundle.url(forResource: fileResource)
     }
-    #endif
 
-    fileprivate init() {}
-  }
-  #endif
-
-  /// This `R.color` struct is generated, and contains static references to 1 colors.
-  struct color {
-    /// Color `AccentColor`.
-    static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
-
-    #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func accentColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.accentColor, compatibleWith: traitCollection)
+    /// `bundle.url(forResource: "Roboto-Regular", withExtension: "ttf")`
+    public static func robotoRegularTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.robotoRegularTtf
+      return fileResource.bundle.url(forResource: fileResource)
     }
-    #endif
-
-    #if os(watchOS)
-    /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
-    @available(watchOSApplicationExtension 4.0, *)
-    static func accentColor(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.accentColor.name)
-    }
-    #endif
 
     fileprivate init() {}
   }
 
-  /// This `R.info` struct is generated, and contains static references to 1 properties.
-  struct info {
-    struct uiApplicationSceneManifest {
-      static let _key = "UIApplicationSceneManifest"
-      static let uiApplicationSupportsMultipleScenes = false
+  /// This `R.font` struct is generated, and contains static references to 2 fonts.
+  public struct font: Rswift.Validatable {
+    /// Font `Roboto-Medium`.
+    public static let robotoMedium = Rswift.FontResource(fontName: "Roboto-Medium")
+    /// Font `Roboto-Regular`.
+    public static let robotoRegular = Rswift.FontResource(fontName: "Roboto-Regular")
 
-      struct uiSceneConfigurations {
-        static let _key = "UISceneConfigurations"
+    /// `UIFont(name: "Roboto-Medium", size: ...)`
+    public static func robotoMedium(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: robotoMedium, size: size)
+    }
 
-        struct uiWindowSceneSessionRoleApplication {
-          struct defaultConfiguration {
-            static let _key = "Default Configuration"
-            static let uiSceneConfigurationName = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneConfigurationName") ?? "Default Configuration"
-            static let uiSceneDelegateClassName = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneDelegateClassName") ?? "$(PRODUCT_MODULE_NAME).SceneDelegate"
+    /// `UIFont(name: "Roboto-Regular", size: ...)`
+    public static func robotoRegular(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: robotoRegular, size: size)
+    }
 
-            fileprivate init() {}
-          }
-
-          fileprivate init() {}
-        }
-
-        fileprivate init() {}
-      }
-
-      fileprivate init() {}
+    public static func validate() throws {
+      if R.font.robotoMedium(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Roboto-Medium' could not be loaded, is 'Roboto-Medium.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.robotoRegular(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Roboto-Regular' could not be loaded, is 'Roboto-Regular.ttf' added to the UIAppFonts array in this targets Info.plist?") }
     }
 
     fileprivate init() {}
@@ -162,7 +138,7 @@ struct R: Rswift.Validatable {
 
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
-      try _R.validate()
+      // There are no resources to validate
     }
 
     fileprivate init() {}
@@ -173,40 +149,6 @@ struct R: Rswift.Validatable {
   fileprivate init() {}
 }
 
-struct _R: Rswift.Validatable {
-  static func validate() throws {
-    #if os(iOS) || os(tvOS)
-    try storyboard.validate()
-    #endif
-  }
-
-  #if os(iOS) || os(tvOS)
-  struct storyboard: Rswift.Validatable {
-    static func validate() throws {
-      #if os(iOS) || os(tvOS)
-      try launchScreen.validate()
-      #endif
-    }
-
-    #if os(iOS) || os(tvOS)
-    struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UIKit.UIViewController
-
-      let bundle = R.hostingBundle
-      let name = "LaunchScreen"
-
-      static func validate() throws {
-        if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    fileprivate init() {}
-  }
-  #endif
-
+public struct _R {
   fileprivate init() {}
 }
